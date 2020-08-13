@@ -6,20 +6,20 @@ import test 1.1
 
 ApplicationWindow {
 
-                  visible: true
-                  width: 640
-                  height: 480
-                  title: "Kernai QML .net"
+    visible: true
+    width: 640
+    height: 480
+    title: "Kernai running on QML.net"
 
-                  Material.theme: Material.Light
-                  Material.accent: '#41cd52'
-                  Material.primary: '#41cd52'
+    Material.theme: Material.Light
+    Material.accent: '#41cd52'
+    Material.primary: '#41cd52'
 
-                  NetObject {
-                  id: test
-                  Component.onCompleted: function() {
-                                         test.method()
-                                         }
-                                         }
-                                                   
+    NetObject {
+        id: test
+        Component.onCompleted: function() {
+            test.method()
+        }
+    }
+
 }
