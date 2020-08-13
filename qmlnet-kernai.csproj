@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>qmlnet_kernai</RootNamespace>
+    <RunWorkingDirectory>$(MSBuildProjectDirectory)</RunWorkingDirectory>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Qml.Net" Version="0.11.0" />
+    <PackageReference Include="Qml.Net.LinuxBinaries" Version="0.11.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="images\**" CopyToPublishDirectory="Always" />
+    <Content Include="pages\**" CopyToPublishDirectory="Always" />
+    <Content Include="Main.qml" CopyToPublishDirectory="Always" />
+  </ItemGroup>
+
+
+</Project>
