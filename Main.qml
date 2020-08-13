@@ -9,8 +9,8 @@ import test 1.1
 ApplicationWindow {
 
     visible: true
-    width: Screen.desktopAvailableWidth - 20
-    height: Screen.desktopAvailableHeight - 40
+    width: Screen.desktopAvailableWidth
+    height: Screen.desktopAvailableHeight
     title: "Kernai running on QML.net"
 
     Material.theme: Material.Light
