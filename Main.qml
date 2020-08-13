@@ -22,10 +22,22 @@ ApplicationWindow {
             ToolButton {
                 text: qsTr("Open")
                 icon.name: "document-open"
-                //onClicked: fileOpenDialog.open()
+                onClicked: fileDialog.open()
             }
         }
     }
+
+    FileDialog{
+           id: fileDialog;
+           title: "Please choose a file";
+           nameFilters: ["Image Files (*.jpg *.png *.gif)"];
+           selectFolder:false
+           visible: false
+           onAccepted: {
+               console.log("User has selected " + fileDialog.fileUrl);
+               fileDialog.close()
+           }
+       }
 
     NetObject {
         id: test
