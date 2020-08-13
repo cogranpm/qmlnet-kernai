@@ -3,13 +3,14 @@ import QtQuick.Controls 2.3
 import QtQuick.Layouts 1.3
 import QtQuick.Controls.Material 2.1
 import QtQuick.Dialogs 1.3
+import QtQuick.Window 2.2
 import test 1.1
 
 ApplicationWindow {
 
     visible: true
-    width: 640
-    height: 480
+    width: Screen.desktopAvailableWidth - 20
+    height: Screen.desktopAvailableHeight - 40
     title: "Kernai running on QML.net"
 
     Material.theme: Material.Light
